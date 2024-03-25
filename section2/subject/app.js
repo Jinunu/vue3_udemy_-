@@ -9,15 +9,11 @@ const app = Vue.createApp({
         };
     },
    methods: {
-        displayRandomNumber(){
-            if (Math.random() < 0.5){
-                return 0;
-            } else {
-                return 1;
-            }
-        },
-       changeName() {
-          this.name = this.inputName;
+       calculateAge(){
+           return this.age + 5;
+       },
+       calculateRandom() {
+          return Math.random();
        }
    }
 });
